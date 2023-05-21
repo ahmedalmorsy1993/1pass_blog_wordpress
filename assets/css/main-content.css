@@ -103,6 +103,9 @@
   line-height: 44px;
   transition: all 0.25s;
 }
+.post-title a {
+  color: var(--color-dark-primary) !important;
+}
 .post-description {
   font-style: normal;
   font-weight: 400;

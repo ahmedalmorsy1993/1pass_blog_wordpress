@@ -3,8 +3,8 @@
 <main class="single-blog">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-      </div>
+
+
       <div class="col-12 col-lg-8">
         <?php get_template_part('includes/single-blog','content')?>
       </div>

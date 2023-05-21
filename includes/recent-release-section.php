@@ -31,70 +31,61 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-
+            <?php
+ 
+ $args = array(
+    'post_type' => 'post',
+    'category_name' => 'recent_releases',
+    
+);
+$arr_posts = new WP_Query( $args );
+  
+if ( $arr_posts->have_posts() ) :
+  
+    while ( $arr_posts->have_posts() ) :
+        $arr_posts->the_post();
+        ?>
             <div class="swiper-slide">
               <div class="blog-card">
                 <div class="blog-img">
-                  <img src="<?php echo get_template_directory_uri().'/assets/img/blog-img.svg'?>" alt="logo" />
+                  <?php if(has_post_thumbnail()):?>
+                  <img src="<?php the_post_thumbnail_url();?>" alt="photo">
+                  <?php endif;?>
                 </div>
                 <div>
-                  <span class="tag-post">Nutrition</span>
-                  <h3 class="post-title">The advantages for mental well-being that come from physical activity.</h3>
+                  <?php
+          $tags = get_the_tags();
+            if($tags):
+                    foreach($tags as $tag):?>
+                  <span class="tag-post"> <?php echo $tag->name;?></span>
+
+
+                  <?php endforeach; endif; ?></span>
+                  <h3 class="post-title">
+                    <a href="<?php the_permalink(); ?>">
+                      <?php the_title();?>
+                    </a>
+
+                  </h3>
 
                   <div class="post-publish">
                     <span>
-                      Dec 01, 2022
+                      <?php the_date()?>
                     </span>
-                    <span>
-                      12min read
-                    </span>
+
                   </div>
 
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="blog-card">
-                <div class="blog-img">
-                  <img src="<?php echo get_template_directory_uri().'/assets/img/blog-img.svg'?>" alt="logo" />
-                </div>
-                <div>
-                  <span class="tag-post">Nutrition</span>
-                  <h3 class="post-title">The advantages for mental well-being that come from physical activity.</h3>
 
-                  <div class="post-publish">
-                    <span>
-                      Dec 01, 2022
-                    </span>
-                    <span>
-                      12min read
-                    </span>
-                  </div>
 
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="blog-card">
-                <div class="blog-img">
-                  <img src="<?php echo get_template_directory_uri().'/assets/img/blog-img.svg'?>" alt="logo" />
-                </div>
-                <div>
-                  <span class="tag-post">Nutrition</span>
-                  <h3 class="post-title">The advantages for mental well-being that come from physical activity.</h3>
+            <?php
+    endwhile;
+    wp_reset_postdata();
+endif;
+ ?>
 
-                  <div class="post-publish">
-                    <span>
-                      Dec 01, 2022
-                    </span>
-                    <span>
-                      12min read
-                    </span>
-                  </div>
-
-                </div>
-              </div>
-            </div>
 
           </div>
 

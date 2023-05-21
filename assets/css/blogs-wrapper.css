@@ -57,7 +57,7 @@
 .breadcrumb {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 0;
 }
 .breadcrumb a,
 .breadcrumb li {

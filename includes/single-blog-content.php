@@ -1,6 +1,14 @@
 <?php if(have_posts()):while(have_posts()):the_post();?>
 <div class="row">
   <div class="col-12">
+    <nav style="--bs-breadcrumb-divider: '<';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">1Pass</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="col-12">
     <div class="single-blog__img">
       <?php if(has_post_thumbnail()):?>
       <img src="<?php the_post_thumbnail_url('blog-large');?>" alt="photo">
@@ -10,11 +18,17 @@
   <div class="col-12 my-4">
     <div class="row">
       <div class="col-12 col-sm-4 d-flex align-items-center gap-4 mb-2">
-        <span class="single-blog__tag">
-          Nutrition
-        </span>
+        <?php
+          $tags = get_the_tags();
+            if($tags):
+                    foreach($tags as $tag):?>
+        <span class="single-blog__tag"> <?php echo $tag->name;?></span>
+
+
+        <?php endforeach; endif; ?></span>
+
         <span class="single-blog__publish">
-          11 min read
+          <?php the_date()?>
         </span>
       </div>
       <div class="col-12 col-sm-8 d-flex align-items-center justify-content-lg-end gap-4 share">
