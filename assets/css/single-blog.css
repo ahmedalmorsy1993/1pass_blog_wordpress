@@ -1,0 +1,154 @@
+.single-blog {
+  margin-top: 150px;
+}
+.single-blog__img img {
+  width: 100% !important;
+  border-radius: 12px;
+  /* height: 461.25px; */
+}
+
+.single-blog__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--color-dark-primary);
+}
+.single-blog__content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-dark-gray);
+}
+.single-blog__tag {
+  display: flex;
+  align-items: center;
+  min-width: 62px;
+  min-height: 20px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #13183e;
+  background-color: #e9ebf8;
+  padding: 0px 8px;
+  gap: 4px;
+  border-radius: 4px;
+}
+.single-blog__publish {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #464d61;
+}
+.single-blog__sidebar {
+  padding: 48px 32px;
+  gap: 12px;
+  border: 1px solid #f8f9fb;
+  border-radius: 8px;
+  min-height: 650px;
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+.single-blog__sidebar h2 {
+  font-weight: 860;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1f212b;
+}
+.single-blog__sidebar__widget__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 12px;
+  height: 176px;
+
+  background: #ffffff;
+  border-radius: 8px;
+
+
+}
+.single-blog__sidebar__widget__card h2 {
+  font-weight: 590;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #1f212b;
+}
+.single-blog__sidebar__widget__card__publish {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 20px;
+
+  color: #464d61;
+}
+.single-blog .share {
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #464d61;
+}
+@media screen and (max-width: 768px) {
+  .single-blog__sidebar {
+    padding: 46px 12px;
+  }
+  .single-blog__title {
+    font-size: 37px;
+  }
+}
+
+
+
+.single-blog__banner{
+padding: 48px 32px;
+gap: 4px;
+height: 472.96px;
+border: 1px solid #F8F9FB;
+border-radius: 8px;
+background-color: #F8F9FB;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.single-blog__banner h2{
+  margin-top: 20px;
+height: 144px;
+font-style: normal;
+font-weight: 1000;
+font-size: 40px;
+line-height: 48px;
+color:#464D61;
+
+
+
+
+}
+.single-blog__follow_us{
+ display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 32px;
+gap: 48px;
+
+min-height: 112px;
+
+background: #F8F9FB;
+border-radius: 8px;
+
+
+}
+.single-blog__follow_us h3{
+font-weight: 860;
+font-size: 20px;
+line-height: 28px;
+color: #1F212B;
+
+
+
+}

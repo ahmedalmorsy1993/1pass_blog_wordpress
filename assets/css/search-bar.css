@@ -1,0 +1,92 @@
+.search-bar {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  min-height: 80px;
+  left: 0px;
+
+  border-bottom: 1px solid var(--color-light-gray);
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+.search-bar input {
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0px 16px;
+  gap: 8px;
+  height: 48px;
+  border: 1px solid var(--color-light-gray);
+  border-radius: 8px;
+}
+.search-bar button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  gap: 4px;
+  width: 44px;
+  height: 48px;
+  border: 0;
+
+  background: var(--color-primary);
+  border-radius: 8px;
+}
+.search-bar select {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px;
+  gap: 8px;
+
+  width: 176px;
+  height: 48px;
+
+  border: 1px solid var(--color-light-gray);
+  border-radius: 8px;
+  color: var(--color-dark-primary) !important;
+  outline: none !important;
+  background-color: transparent;
+   -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select-div{
+  position: relative;
+}
+.select-div::before {
+    content: url('../img/arrow_down.svg');
+    transition: all .5 ease;
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 10px;
+}
+
+
+.search-bar select option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+  position: relative;
+  width: 176px;
+  height: 224px;
+
+  border: 1px solid #dfe2eb;
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .filter-action {
+    justify-content: center !important;
+  }
+}
+.filter-action ul li:last-of-type{
+  display: none;
+}

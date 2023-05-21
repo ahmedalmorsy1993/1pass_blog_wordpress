@@ -1,0 +1,47 @@
+.navbar {
+  background-color: var(--color-of-white) !important;
+  min-height: 85.5px;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+.navbar-brand {
+  flex-grow: 1;
+}
+
+.navbar .get-app-button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  gap: 4px;
+  width: 108px;
+  height: 48px;
+
+  background: var(--color-primary);
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  color: var(--color-white);
+}
+.navbar .language {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--color-primary);
+}
+ul {
+  list-style: none !important;
+}
+.lang-item,
+.lang-item a {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--color-primary);
+}

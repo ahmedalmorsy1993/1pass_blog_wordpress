@@ -1,0 +1,109 @@
+.news-letter {
+  min-height: 648px;
+  margin-top: 80px;
+  position: relative;
+}
+.news-letter::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  /* top: -100px; */
+  width: 215px;
+  height: 288px;
+  background-image: url("../img/dumbbell_man.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  .news-letter::before {
+    top: -50px;
+  }
+}
+.news-letter::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -150px;
+  width: 215px;
+  height: 288px;
+  background-image: url("../img/dumbbell_women.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.news-letter .wrapper {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  background: rgba(214, 238, 255, 0.5);
+  border: 1px solid #addeff;
+  backdrop-filter: blur(2px);
+  border-radius: 16px;
+  position: relative;
+  z-index: 2;
+}
+.news-letter .wrapper h2 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+  color: var(--color-dark-primary);
+}
+@media screen and (max-width: 768px) {
+  .news-letter .wrapper {
+    padding: 40px;
+  }
+  .news-letter .wrapper h2 {
+    font-size: 30px;
+  }
+}
+.news-letter .wrapper p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #464d61;
+  margin-block: 10px;
+}
+.news-letter button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 12px;
+  gap: 4px;
+
+  width: 44px;
+  height: 48px;
+
+  background: #c3c8d9;
+  border-radius: 8px;
+  border: 0;
+}
+.news-letter .me-2 {
+  margin: 0 !important;
+}
+.news-letter button svg {
+  fill: #464d61;
+}
+html[dir="rtl"] .news-letter button svg {
+  transform: rotate(180deg) !important;
+}
+
+.news-letter input {
+  outline: none !important;
+  box-shadow: none !important;
+
+  padding: 0px 16px;
+  gap: 8px;
+  height: 48px;
+  border: 1px solid #dfe2eb;
+  border-radius: 8px;
+}
+.news-letter label {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  color: #464d61;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,29 @@
+footer {
+  min-height: 80px;
+  border-top: 1px solid #dfe2eb;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+footer * {
+  color: #1f212b !important;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+footer a {
+  text-decoration: none;
+}
+@media screen and (max-width: 667px) {
+  footer {
+    text-align: center;
+  }
+  ul {
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
