@@ -47,8 +47,6 @@ a {
   text-decoration: none !important;
 }
 
-
-
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -61,8 +59,13 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #2E3D98;
+  background: #2e3d98;
   border-radius: 8px;
 }
 
-
+.ssk {
+  background-color: transparent !important;
+}
+.ssk-count {
+  padding: 0 !important;
+}

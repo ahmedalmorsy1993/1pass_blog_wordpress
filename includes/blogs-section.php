@@ -41,7 +41,7 @@ if ( $arr_posts->have_posts() ) :
 
              <div class="post-publish">
                <span>
-                 <?php the_date()?>
+                 <?php echo get_the_date();?>
                </span>
 
              </div>

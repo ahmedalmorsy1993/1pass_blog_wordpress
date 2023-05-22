@@ -54,8 +54,8 @@ if ( $arr_posts->have_posts() ) :
                 </div>
                 <div>
                   <?php
-          $tags = get_the_tags();
-            if($tags):
+                $tags = get_the_tags();
+                   if($tags):
                     foreach($tags as $tag):?>
                   <span class="tag-post"> <?php echo $tag->name;?></span>
 
@@ -70,7 +70,7 @@ if ( $arr_posts->have_posts() ) :
 
                   <div class="post-publish">
                     <span>
-                      <?php the_date()?>
+                      <?php echo get_the_date();?>
                     </span>
 
                   </div>
