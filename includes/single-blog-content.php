@@ -36,20 +36,20 @@
           Share on
         </span>
         <div class="ssk-group ssk-count d-flex align-items-center gap-3">
-          <a href="" class="ssk ssk-twitter">
+          <a href="" class="ssk ">
             <img src="<?php echo get_template_directory_uri().'/assets/share-icons/twitter.svg'?>" alt="logo" />
           </a>
-          <a href="" class="ssk ssk-linkedin">
+          <a href="" class="ssk ">
             <img src="<?php echo get_template_directory_uri().'/assets/share-icons/linkedin.svg'?>" alt="logo" />
           </a>
-          <a href="" class="ssk ssk-facebook">
+          <a href="" class="ssk ">
             <img src="<?php echo get_template_directory_uri().'/assets/share-icons/facebook.svg'?>" alt="logo" />
           </a>
 
-          <a href="" class="ssk ssk-twitter">
+          <a href="" class="ssk ">
             <img src="<?php echo get_template_directory_uri().'/assets/share-icons/twitter.svg'?>" alt="logo" />
           </a>
-          <a href="" class="ssk ssk-whtsapp">
+          <a href="" class="ssk ">
             <img src="<?php echo get_template_directory_uri().'/assets/share-icons/whtsapp.svg'?>" alt="logo" />
           </a>
           <a href="" class="ssk ssk-telegram">
@@ -78,20 +78,20 @@
         <div class="col-12 col-sm-8 d-flex align-items-center justify-content-lg-end gap-4 share">
 
           <div class="ssk-group ssk-count d-flex align-items-center gap-3">
-            <a href="" class="ssk ssk-twitter">
+            <a href="" class="ssk ">
               <img src="<?php echo get_template_directory_uri().'/assets/share-icons/twitter.svg'?>" alt="logo" />
             </a>
-            <a href="" class="ssk ssk-linkedin">
+            <a href="" class="ssk ">
               <img src="<?php echo get_template_directory_uri().'/assets/share-icons/linkedin.svg'?>" alt="logo" />
             </a>
-            <a href="" class="ssk ssk-facebook">
+            <a href="" class="ssk ">
               <img src="<?php echo get_template_directory_uri().'/assets/share-icons/facebook.svg'?>" alt="logo" />
             </a>
 
-            <a href="" class="ssk ssk-twitter">
+            <a href="" class="ssk ">
               <img src="<?php echo get_template_directory_uri().'/assets/share-icons/twitter.svg'?>" alt="logo" />
             </a>
-            <a href="" class="ssk ssk-whtsapp">
+            <a href="" class="ssk ">
               <img src="<?php echo get_template_directory_uri().'/assets/share-icons/whtsapp.svg'?>" alt="logo" />
             </a>
             <a href="" class="ssk ssk-telegram">

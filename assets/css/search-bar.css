@@ -51,21 +51,20 @@
   color: var(--color-dark-primary) !important;
   outline: none !important;
   background-color: transparent;
-   -webkit-appearance: none;
+  -webkit-appearance: none;
   -moz-appearance: none;
 }
-.select-div{
+.select-div {
   position: relative;
 }
 .select-div::before {
-    content: url('../img/arrow_down.svg');
-    transition: all .5 ease;
-    position: absolute;
-    display: block;
-    right: 10px;
-    top: 10px;
+  content: url("../img/arrow_down.svg");
+  transition: all 0.5 ease;
+  position: absolute;
+  display: block;
+  right: 10px;
+  top: 10px;
 }
-
 
 .search-bar select option {
   display: flex;
@@ -87,6 +86,6 @@
     justify-content: center !important;
   }
 }
-.filter-action ul li:last-of-type{
+/* .filter-action ul li:last-of-type{
   display: none;
-}
+} */
