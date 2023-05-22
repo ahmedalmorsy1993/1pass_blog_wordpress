@@ -63,8 +63,8 @@ const total_element = document.querySelector(".total");
 function handlePercent() {
   let percent = (per_page / total) * 100;
   percent_element.style.width = `${percent}%`;
-  per_page_element.textContent = per_page;
-  total_element.textContent = total;
+  // per_page_element.textContent = per_page;
+  // total_element.textContent = total;
 }
 load_more_button.addEventListener("click", () => {
   if (per_page < total) {

@@ -22,6 +22,8 @@ function load_css(){
 
 add_action('wp_enqueue_scripts','load_css');
 add_action('wp_enqueue_scripts','load_js');
+add_action('wp_ajax_nopriv_load_more_posts','load_more_posts');
+add_action('wp_ajax_load_more_posts','load_more_posts');
 
 
 // theme options
@@ -32,4 +34,21 @@ add_theme_support('widgets');
 
 // custom image sizes
 add_image_size('blog-large',800,400,false);
-add_image_size('blog-small',300,200,true);
+add_image_size('blog-small',300,200,true); 
+
+
+function load_more_posts(){
+  $next_page = $_POST['current_page'] + 1;
+  $query = new WP_Query([
+    'posts_per_page' => 10,
+    'paged' => $next_page
+  ]);
+  if($query->have_posts()):
+    ob_start();
+    while($query->have_posts()):$query->the_post();
+      get_template_part('template-parts/blog-content');
+  endwhile;
+  endif;
+
+  wp_send_json_success(ob_get_clean());
+};

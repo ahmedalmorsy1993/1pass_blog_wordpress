@@ -1,6 +1,11 @@
+ <?php 
+ global $wp_query;
+ 
+ ?>
  <section class="blogs-wrapper">
    <div class="container">
-     <div class="row">
+     <div class="row" id="blogs-container" data-page="<?= get_query_var('paged') ? get_query_var('paged') : 1;?>"
+       data-max="<?= $wp_query->max_num_pages;?>">
        <!--  -->
        <?php
  
@@ -16,7 +21,7 @@ if ( $arr_posts->have_posts() ) :
     while ( $arr_posts->have_posts() ) :
         $arr_posts->the_post();
         ?>
-       <div class="col-12 col-lg-4">
+       <div class="col-12 col-lg-4 mb-2">
          <div class="blog-card">
            <div class="blog-img">
              <?php if(has_post_thumbnail()):?>
@@ -60,7 +65,9 @@ endif;
      <div class="row mt-5">
        <div class="col-12 col-lg-4 text-center mx-auto">
          <div class="blogs-preview">
-           You’ve viewed <span class="per_page"></span> of <span class="total"></span> articles
+           You’ve viewed <span class="per_page">
+             <?php get_query_var('paged')?>
+           </span> of <span class="total"><?php $wp_query->max_num_pages;?></span> articles
          </div>
          <div class="progress-bar my-3">
            <span class="percent-scroll"></span>
