@@ -13,13 +13,13 @@
 
     <nav class="navbar navbar-expand-lg ">
       <div class="container">
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="#">
           <img src="<?php echo get_template_directory_uri().'/assets/img/logo-1pass.svg'?>" alt="logo" />
 
         </a>
 
         <div class="d-flex align-items-center gap-3">
-          <a href="#" class="language"><?php pll_the_languages(array('show_names'=>0,'hide_current'=>1));  ?></a>
+          <a href="#" class="language"><?php pll_the_languages();  ?></a>
           <a class="get-app-button" href="/1pass.app">Get the app</a>
 
         </div>

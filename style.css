@@ -66,3 +66,6 @@ a {
 .ssk {
   background-color: transparent !important;
 }
+.ssk-count {
+  padding: 0 !important;
+}
