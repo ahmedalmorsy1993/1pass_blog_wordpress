@@ -19,7 +19,7 @@
         </a>
 
         <div class="d-flex align-items-center gap-3">
-          <a href="#" class="language"><?php pll_the_languages();  ?></a>
+          <a href="#" class="language"><?php pll_the_languages(array('show_names' => 1, 'hide_current'=>1 ));  ?></a>
           <a class="get-app-button" href="/1pass.app">Get the app</a>
 
         </div>
