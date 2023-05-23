@@ -40,9 +40,10 @@ add_image_size('blog-small',300,200,true);
 function load_more_posts(){
   $next_page = $_POST['current_page'] + 1;
   $query = new WP_Query([
-    'posts_per_page' => 10,
+    'posts_per_page' => 3,
     'paged' => $next_page
   ]);
+
   if($query->have_posts()):
     ob_start();
     while($query->have_posts()):$query->the_post();

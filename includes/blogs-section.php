@@ -5,7 +5,7 @@
  <section class="blogs-wrapper">
    <div class="container">
      <div class="row" id="blogs-container" data-page="<?= get_query_var('paged') ? get_query_var('paged') : 1;?>"
-       data-max="<?= $wp_query->max_num_pages;?>">
+       data-max="<?= $wp_query->max_num_pages;?>" data-perPage="<?=$posts_per_page?>">
        <!--  -->
        <?php
  
@@ -15,7 +15,11 @@
     
 );
 $arr_posts = new WP_Query( $args );
-  
+$post_counts = wp_count_posts();
+$posts_per_page = get_option('posts_per_page');
+$total_posts_count = $post_counts->publish;
+
+
 if ( $arr_posts->have_posts() ) :
   
     while ( $arr_posts->have_posts() ) :
@@ -62,12 +66,12 @@ endif;
 
        <!--  -->
      </div>
-     <div class="row mt-5">
+     <div class="row mt-5" id="pagination">
        <div class="col-12 col-lg-4 text-center mx-auto">
          <div class="blogs-preview">
            You’ve viewed <span class="per_page">
-             <?php get_query_var('paged')?>
-           </span> of <span class="total"><?php $wp_query->max_num_pages;?></span> articles
+             <?php echo $posts_per_page ; ?>
+           </span> of <span class="total"><?php echo $total_posts_count;?></span> articles
          </div>
          <div class="progress-bar my-3">
            <span class="percent-scroll"></span>
