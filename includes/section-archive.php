@@ -1,4 +1,4 @@
-<div class="blogs-wrapper">
+<div class="blogs-wrapper" style="margin-top: 0">
   <div class="container">
     <div class="row">
       <?php if(have_posts()):while(have_posts()):the_post();?>
@@ -39,7 +39,7 @@
       </div>
       <?php endwhile; else: endif;?>
     </div>
-    <div class="row mt-5">
+    <!-- <div class="row mt-5">
       <div class="col-12 col-lg-4 text-center mx-auto">
         <div class="blogs-preview">
           You’ve viewed <span class="per_page"></span> of <span class="total"></span> articles
@@ -53,7 +53,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 
