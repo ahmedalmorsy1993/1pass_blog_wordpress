@@ -53,3 +53,10 @@ function load_more_posts(){
 
   wp_send_json_success(ob_get_clean());
 };
+
+
+
+function my_theme_setup() {
+  load_theme_textdomain( '1pass_blog_wordpress', get_template_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'my_theme_setup' );
