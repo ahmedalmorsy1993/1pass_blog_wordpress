@@ -21,7 +21,14 @@
         <div class="d-flex align-items-center gap-3">
           <a href="#" class="language"><?php pll_the_languages(array('show_names' => 1, 'hide_current'=>1 ));  ?></a>
           <a class="get-app-button" href="/1pass.app">Get the app</a>
-
+          <!-- <?php $currentLang = get_bloginfo('language');
+            if($currentLang == "ar"){
+              echo "أحا";
+            }else{
+            echo "a7a";
+            }
+          
+          ?> -->
         </div>
       </div>
     </nav>

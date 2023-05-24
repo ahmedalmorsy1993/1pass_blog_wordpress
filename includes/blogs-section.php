@@ -12,6 +12,7 @@
  $args = array(
     'post_type' => 'post',
     'category_name' => 'recent_releases',
+    'posts_per_page' =>3
     
 );
 $arr_posts = new WP_Query( $args );
