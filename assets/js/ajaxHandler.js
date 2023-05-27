@@ -36,7 +36,7 @@
 
           handlePercent();
           blog_container.innerHTML += data.data;
-          if (current_page == max_pages) {
+          if (total == per_page) {
             document.querySelector("#pagination").remove();
           } else {
             blog_container.dataset.page++;

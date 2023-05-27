@@ -38,7 +38,7 @@ add_image_size('blog-small',300,200,true);
 
 
 function load_more_posts(){
-  $next_page = $_POST['current_page'] + 1;
+  $next_page = $_POST['current_page'];
   $query = new WP_Query([
     'posts_per_page' => 3,
     'paged' => $next_page
@@ -53,3 +53,14 @@ function load_more_posts(){
 
   wp_send_json_success(ob_get_clean());
 };
+
+
+
+function my_theme_setup() {
+  load_theme_textdomain( '1pass-blog', get_template_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'my_theme_setup' );
+
+add_action('init', function() {
+  pll_register_string('1pass_blog', '1pass_blog');
+});
