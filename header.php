@@ -13,7 +13,7 @@
 
     <nav class="navbar navbar-expand-lg ">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img src="<?php echo get_template_directory_uri().'/assets/img/logo-1pass.svg'?>" alt="logo" />
 
         </a>
