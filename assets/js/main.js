@@ -75,3 +75,8 @@ observer.observe(target);
 // });
 // handlePercent();
 SocialShareKit.init({ forceInit: true });
+document.querySelectorAll(".searchandfilter select").forEach((el) => {
+  el.addEventListener("change", () => {
+    document.querySelector(".searchandfilter ").submit();
+  });
+});
