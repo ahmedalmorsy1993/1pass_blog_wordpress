@@ -5,7 +5,7 @@
           <h6 style="text-transform: uppercase;"> <?php pll_e('1pass_blog'); ?></h6>
 
           <h1>
-            <?php echo  __( 'A collection of blog posts to help you with your well-being.', 'hero_section_title' ); ?>
+            <?php pll_e('hero_section_title'); ?>
           </h1>
         </div>
       </div>

@@ -33,7 +33,8 @@
       </div>
       <div class="col-12 col-sm-8 d-flex align-items-center justify-content-lg-end gap-4 share">
         <span>
-          Share on
+          <?php pll_e('share_on'); ?>
+
         </span>
         <div class="ssk-group ssk-count d-flex align-items-center gap-3">
           <a href="" class="ssk ">
@@ -73,7 +74,8 @@
     <div class="col-12">
       <div class="row">
         <div class="col-12 col-sm-4 d-flex align-items-center gap-4 mb-2">
-          <h3>Follow us on social media</h3>
+          <h3> <?php pll_e('follow_us_on_social_media'); ?>
+          </h3>
         </div>
         <div class="col-12 col-sm-8 d-flex align-items-center justify-content-lg-end gap-4 share">
 

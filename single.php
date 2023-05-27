@@ -16,7 +16,8 @@
             <div class="single-blog__sidebar">
               <div class="col-12">
                 <h2>
-                  You may also like
+                  <?php pll_e('You_may_also_like'); ?>
+
                 </h2>
               </div>
               <?php get_template_part('includes/sidebar','section')?>
@@ -31,8 +32,8 @@
                     alt="logo" />
                 </div>
                 <div class="col-12">
-                  <h2>
-                    Start Your Workout Today.
+                  <h2 class="d-flex align-items-center">
+                    <?php pll_e('start_your_workout'); ?>
                   </h2>
                 </div>
                 <div class="col-12">

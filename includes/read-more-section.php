@@ -4,7 +4,7 @@
       <div class="col-12">
         <div class="row">
           <div class="col-6">
-            <h3>Read More</h3>
+            <h3><?php pll_e('read_more'); ?></h3>
           </div>
           <div class="col-6 d-flex justify-content-end">
             <div class="slider-action">

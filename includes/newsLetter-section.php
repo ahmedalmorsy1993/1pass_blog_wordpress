@@ -11,11 +11,13 @@
                   <img width="128" height="128"
                     src="<?php echo get_template_directory_uri().'/assets/img/envelope-circle.svg'?>" alt="logo" />
                   <h2 class="mt-2">
-                    Get our monthly wellness newsletter that you won't want to delete</h2>
+
+                    <?php pll_e('monthly_wellnes_newsletter'); ?>
+                  </h2>
                 </div>
                 <div class="col-12 col-lg-10 mx-auto mt-2">
                   <form role="search">
-                    <label for="email">Email</label>
+                    <label for="email"> <?php pll_e('email'); ?></label>
                     <div class="d-flex align-items-center gap-2">
                       <input id="email" class="form-control me-2" type="email" placeholder="Ex: george@email.com"
                         aria-label="">
@@ -28,7 +30,8 @@
                       </button>
                     </div>
                   </form>
-                  <p class="text-center">No charge, no spam. You can unsubscribe anytime</p>
+
+                  <p class="text-center"> <?php pll_e('No_charge_no_spam_you_can_unsubscribe_anytime'); ?></p>
                 </div>
               </div>
 

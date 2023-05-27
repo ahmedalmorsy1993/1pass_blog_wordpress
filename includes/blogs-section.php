@@ -70,16 +70,21 @@ endif;
      <div class="row mt-5" id="pagination">
        <div class="col-12 col-lg-4 text-center mx-auto">
          <div class="blogs-preview">
-           You’ve viewed <span class="per_page">
+
+           <?php pll_e('you_viewed'); ?>
+           <span class="per_page">
              <?php echo $posts_per_page ; ?>
-           </span> of <span class="total"><?php echo $total_posts_count;?></span> articles
+           </span> <?php pll_e('of'); ?> <span class="total"><?php echo $total_posts_count;?></span>
+           <?php pll_e('articles'); ?>
          </div>
          <div class="progress-bar my-3">
            <span class="percent-scroll"></span>
          </div>
          <div class="d-grid">
            <button class="load-more">
-             load more
+
+             <?php pll_e('load_more'); ?>
+
            </button>
          </div>
        </div>

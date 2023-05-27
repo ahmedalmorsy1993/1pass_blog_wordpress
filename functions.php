@@ -63,4 +63,19 @@ add_action( 'after_setup_theme', 'my_theme_setup' );
 
 add_action('init', function() {
   pll_register_string('1pass_blog', '1pass_blog');
+  pll_register_string('No_charge_no_spam_you_can_unsubscribe_anytime', 'No_charge_no_spam_you_can_unsubscribe_anytime');
+  pll_register_string('monthly_wellnes_newsletter', 'monthly_wellnes_newsletter');
+  pll_register_string('email', 'email');
+  pll_register_string('recent_releases', 'recent_releases');
+  pll_register_string('hero_section_title', 'hero_section_title');
+  pll_register_string('get_the_app', 'get_the_app');
+  pll_register_string('you_viewed', 'you_viewed');
+  pll_register_string('of', 'of');
+  pll_register_string('articles', 'articles');
+  pll_register_string('load_more', 'load_more');
+  pll_register_string('You_may_also_like', 'You_may_also_like');
+  pll_register_string('follow_us_on_social_media', 'follow_us_on_social_media');
+  pll_register_string('share_on', 'share_on');
+  pll_register_string('read_more', 'read_more');
+  pll_register_string('start_your_workout', 'start_your_workout');
 });
